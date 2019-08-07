@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <body>
+
+    <h2>JavaScript </h2>
+    <button onclick = '' > click me </button>
+    <p id="demo"></p>
+
+    <script>
+         class convertion{
+             constructor (number, language){
+                 this.number = number;
+                 this.language = language;
+                    }
+                    
+                 convert(){                 
+                    if (this.language === "english"){
+                        var i = 0;
+                        for (i=0; i<=this.number.length; i++){
+                            switch(this.number[i]){
+                                case "1":
+                                this.number[i]= "one"
+                                break;
+                                case "2":
+                                this.number[i]= "two"
+                                break;
+                                case "3":
+                                this.number[i]= "three"
+                                break;
+                                case "4":
+                                this.number[i]= "four"
+                                break;
+                                case "5":
+                                this.number[i]= "five"
+                                break;
+                                case "6":
+                                this.number[i]= "six"
+                                break;
+                                case "7":
+                                this.number[i]= "seven"
+                                break;
+                                case "8":
+                                this.number[i]= "eight"
+                                break;
+                                case "9":
+                                this.number[i]= "nine"
+                                break;
+                                case "0":
+                                this.number[i]= "zero"
+                                break;
+                            }
+                        }
+                    }
+                    else {
+                        return this.number
+                 }
+                }
+            }
+         
+
+    var num = new convertion('57','english').convert()
+    console.log(num)
+
+    </script>
+  </body>
+</html>
